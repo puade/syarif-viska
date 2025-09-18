@@ -117,7 +117,7 @@ to {
 
 .tombolcover {
   position: fixed;
-  bottom: 1%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
@@ -772,3 +772,4 @@ padding-bottom: 50px;
   font-weight: bold;
   color: #3498db;
 }
+
