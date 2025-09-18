@@ -19,6 +19,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'cambria'; /* Nama font yang akan digunakan */
+  src: url('asset/font/cambria.ttc') format('truetype'); /* Lokasi dan format font */
+  font-weight: normal;
+  font-style: normal;
+}
 
 body, html {
   height: 100%;
@@ -772,4 +778,5 @@ padding-bottom: 50px;
   font-weight: bold;
   color: #3498db;
 }
+
 
