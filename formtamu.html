@@ -135,11 +135,16 @@
 
         // Memastikan setiap kata dimulai dengan huruf kapital dan mengganti spasi dengan '+' 
         var formattedNama = nama
-            .split(' ')  // Pisahkan berdasarkan spasi
+            .split(' ')
             .map(function(kata) {
-                return kata.charAt(0).toUpperCase() + kata.slice(1).toLowerCase();  // Kapitalkan huruf pertama
+                return kata
+                    .split('.')
+                    .map(function(sub) {
+                        return sub.charAt(0).toUpperCase() + sub.slice(1).toLowerCase();
+                    })
+                    .join('.');
             })
-            .join('+' );  // Gabungkan kembali dengan '+' sebagai pengganti spasi
+            .join('+');
 
         // Membuat output dengan teks yang diinginkan dan mengganti "Fulan & Fulanah"
         var output = `Bismillahirrahmanirrahim
@@ -230,3 +235,4 @@ ${Fulan} & ${Fulanah}`;
 
 </body>
 </html>
+
